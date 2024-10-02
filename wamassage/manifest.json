@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp Chat Translator",
+  "version": "1.0",
+  "description": "Chat in your preferred language on WhatsApp Web.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "declarativeContent",
+    "storage"  
+  ],
+  "host_permissions": [
+    "https://web.whatsapp.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  }
+}
